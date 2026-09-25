@@ -37,6 +37,17 @@ flowchart LR
 
 ## Agent-assisted launches
 
+Install the reusable [Farmgun launch skill](skills/farmgun-launch/SKILL.md) by
+copying the `skills/farmgun-launch` folder into your agent's skills directory.
+It covers wallet setup, launch preparation, budget checks, and recovery.
+
+Example: “Use farmgun-launch to prepare Quorvix / QVXL on O1 / ETH on Base.
+Use my supplied image and a maximum total spend of 0.001 ETH, including gas.
+Show the prepared launch for wallet approval.”
+
+The skill uses the site's wallet flow. Installing it does not provide a headless
+signer or authorize transactions.
+
 Give a browser-capable agent the [site overview](https://farmgun.fun/llms.txt)
 and [agent guide](https://farmgun.fun/agent-guide.md), then specify the chain,
 launchpad, pairing, token details, and artwork.
